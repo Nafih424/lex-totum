@@ -1,0 +1,3180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex Totum | Premium Corporate Legal Consultancy</title>
+    <meta name="description"
+        content="Trusted legal experts providing premium consultancy for businesses and individuals. Corporate law, litigation, intellectual property, and more.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <style id="inlined-style">
+/* ==========================================================================
+   LEX TOTUM LEGAL CONSULTANCY - STYLESHEET
+   ========================================================================== */
+
+/* 1. Reset & Root Variables */
+:root {
+    --color-navy: #0B1F3A;
+    --color-navy-light: #162E4E;
+    --color-gold: #C8A75B;
+    --color-gold-hover: #D8B86C;
+    --color-gold-light: rgba(200, 167, 91, 0.1);
+    --color-white: #FFFFFF;
+    --color-light-bg: #F5F7FA;
+    --color-warm-bg: #FAFBFD;
+    --color-text-dark: #1E293B;
+    --color-text-muted: #64748B;
+    --color-border: #E2E8F0;
+    --color-error: #EF4444;
+    --color-success: #10B981;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --transition-fast: all 0.25s ease;
+    --transition-normal: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+    --shadow-soft: 0 4px 20px -2px rgba(11, 31, 58, 0.05);
+    --shadow-medium: 0 10px 30px -5px rgba(11, 31, 58, 0.08);
+    --shadow-hard: 0 20px 40px -15px rgba(11, 31, 58, 0.15);
+    --shadow-gold: 0 10px 25px -5px rgba(200, 167, 91, 0.3);
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Global Utilities & Layout */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--color-light-bg);
+}
+
+.bg-warm {
+    background-color: var(--color-warm-bg);
+}
+
+/* Grids */
+.grid {
+    display: grid;
+    gap: 32px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-navy);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+}
+
+.section-header {
+    max-width: 650px;
+    margin: 0 auto 60px auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-tag {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-fast);
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.btn-gold {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.btn-gold:hover {
+    background-color: var(--color-gold-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-navy);
+    transform: translateY(-2px);
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+/* 3. Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-navy);
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-medium);
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+/* 4. Header & Navigation */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    transition: var(--transition-normal);
+    padding: 24px 0;
+}
+
+.main-header.scrolled {
+    background-color: var(--color-navy);
+    padding: 16px 0;
+    box-shadow: var(--shadow-medium);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+}
+
+.logo-subtitle {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+    margin-top: 2px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    position: relative;
+    padding: 6px 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-gold);
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--color-white);
+}
+
+.nav-link.active::after, .nav-link:hover::after {
+    width: 100%;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Mobile Toggle Hamburger */
+.mobile-nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.mobile-nav-toggle .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: var(--transition-fast);
+    transform-origin: left center;
+}
+
+/* 5. Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(11, 31, 58, 0.95) 0%, rgba(11, 31, 58, 0.8) 100%);
+    z-index: 2;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero-tag {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: var(--color-white);
+    margin-bottom: 24px;
+    line-height: 1.15;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* 6. About Us */
+.about-image {
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-hard);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition-slow);
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: var(--color-navy);
+    border-left: 4px solid var(--color-gold);
+    padding: 20px 30px;
+    color: var(--color-white);
+    box-shadow: var(--shadow-medium);
+}
+
+.badge-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    line-height: 1;
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about-desc-lead {
+    font-size: 1.2rem;
+    color: var(--color-navy);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-desc-text {
+    margin-bottom: 40px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.stat-card {
+    background-color: var(--color-light-bg);
+    padding: 24px;
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-fast);
+    border-bottom: 2px solid transparent;
+}
+
+.stat-card:hover {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+    border-bottom-color: var(--color-gold);
+    transform: translateY(-3px);
+}
+
+.stat-num {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+/* 7. Why Choose Us */
+.feature-card {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-normal);
+    border: 1px solid var(--color-border);
+    position: relative;
+    top: 0;
+}
+
+.feature-card:hover {
+    top: -8px;
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold-light);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--color-gold);
+    margin-bottom: 24px;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.feature-text {
+    font-size: 0.95rem;
+}
+
+/* 8. Practice Areas */
+.practice-card {
+    background-color: var(--color-navy);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition-normal);
+    aspect-ratio: 4 / 5;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.practice-card-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.practice-card-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+    filter: brightness(0.9);
+}
+
+.practice-card-content {
+    position: absolute;
+    inset: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(11, 31, 58, 0.95) 0%, rgba(11, 31, 58, 0.65) 50%, rgba(11, 31, 58, 0.15) 100%);
+    z-index: 2;
+    transition: var(--transition-normal);
+}
+
+.practice-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--color-gold);
+    margin-bottom: 16px;
+    transition: var(--transition-normal);
+}
+
+.practice-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.practice-card-title {
+    color: var(--color-white);
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+    transition: var(--transition-normal);
+}
+
+.practice-card-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.85rem;
+    opacity: 0.9;
+    max-height: 100px;
+    overflow: hidden;
+    margin-top: 8px;
+    transition: var(--transition-normal);
+    line-height: 1.4;
+}
+
+/* Practice Card Hover States */
+.practice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    background-color: var(--color-navy-light);
+}
+
+.practice-card:hover .practice-card-bg img {
+    transform: scale(1.08);
+}
+
+.practice-card:hover .practice-card-content {
+    background: linear-gradient(to top, rgba(11, 31, 58, 0.98) 0%, rgba(11, 31, 58, 0.8) 60%, rgba(11, 31, 58, 0.25) 100%);
+}
+
+.practice-card:hover .practice-card-text {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+.practice-card:hover .practice-icon {
+    transform: translateY(-5px) scale(1.05);
+    color: var(--color-gold-hover);
+}
+
+/* 9. Services */
+.service-card {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold);
+}
+
+.service-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--color-navy);
+    margin-bottom: 24px;
+    transition: var(--transition-fast);
+}
+
+.service-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.service-card:hover .service-icon {
+    color: var(--color-gold);
+}
+
+.service-title {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.service-text {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.service-link {
+    color: var(--color-gold);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition-fast);
+    display: inline-flex;
+}
+
+.service-link:hover {
+    color: var(--color-navy);
+    transform: translateX(4px);
+}
+
+/* 10. Our Process */
+.timeline-wrapper {
+    position: relative;
+    margin-top: 60px;
+    padding: 20px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-border);
+    z-index: 1;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+.timeline-marker {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-gold);
+    color: var(--color-navy);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-marker {
+    background-color: var(--color-navy);
+    border-color: var(--color-navy);
+    color: var(--color-gold);
+    transform: scale(1.1);
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.timeline-text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+/* 11. Testimonials */
+.testimonial-card {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold-light);
+}
+
+.quote-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--color-gold-hover);
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.client-name {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.client-role {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+/* 12. Our Team */
+.team-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold);
+}
+
+.team-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-fallback {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+    transition: var(--transition-slow);
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: var(--transition-slow);
+}
+
+.team-card:hover .avatar-fallback,
+.team-card:hover .team-photo {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: 24px;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+}
+
+.team-designation {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.team-spec {
+    font-size: 0.85rem;
+}
+
+.team-category-title {
+    font-size: 1.6rem;
+    color: var(--color-navy);
+    text-align: center;
+    margin: 50px 0 30px 0;
+    position: relative;
+    font-family: var(--font-heading);
+}
+
+.team-category-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-gold);
+    margin: 8px auto 0 auto;
+}
+
+/* Grid 6 for Interns Section */
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.grid-center {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.grid-center.grid-3 > * {
+    flex: 0 1 calc(33.333% - 22px);
+    max-width: calc(33.333% - 22px);
+    min-width: 250px;
+}
+
+.grid-center.grid-6 {
+    gap: 16px;
+}
+
+.grid-center.grid-6 > * {
+    flex: 0 1 calc(16.666% - 14px);
+    max-width: calc(16.666% - 14px);
+    min-width: 150px;
+}
+
+/* Sizing Adjustments for Associate Advocates (Small Cards) */
+.team-card-small .team-info {
+    padding: 16px;
+}
+.team-card-small .team-name {
+    font-size: 1.15rem;
+}
+.team-card-small .avatar-fallback {
+    font-size: 2.5rem;
+}
+
+/* Sizing Adjustments for Legal Interns (Mini Cards) */
+.team-card-mini .team-info {
+    padding: 12px;
+}
+.team-card-mini .team-name {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+.team-card-mini .team-designation {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+}
+.team-card-mini .team-spec {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+}
+.team-card-mini .avatar-fallback {
+    font-size: 1.8rem;
+}
+
+/* 13. Blog */
+.blog-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-gold);
+}
+
+.blog-card-header {
+    padding: 24px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.blog-category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-card-body {
+    padding: 16px 30px 24px 30px;
+    flex-grow: 1;
+}
+
+.blog-card-title {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.blog-card-title a {
+    color: var(--color-navy);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.blog-card-title a:hover {
+    color: var(--color-gold);
+}
+
+.blog-card-excerpt {
+    font-size: 0.95rem;
+}
+
+.blog-card-footer {
+    padding: 0 30px 24px 30px;
+}
+
+.blog-link {
+    font-weight: 700;
+    color: var(--color-navy);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: var(--transition-fast);
+}
+
+.blog-card:hover .blog-link {
+    color: var(--color-gold);
+}
+
+/* 14. Contact Section */
+.contact-section {
+    background-color: var(--color-white);
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-gold);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.info-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.info-details h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.info-details p {
+    font-size: 0.95rem;
+}
+
+/* Contact Form */
+.form-wrapper {
+    background-color: var(--color-navy);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    color: var(--color-white);
+    box-shadow: var(--shadow-medium);
+}
+
+.form-wrapper h3 {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.form-wrapper p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--color-navy-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    background-color: rgba(22, 46, 78, 0.5);
+}
+
+/* Select Styling Reset */
+.form-group select option {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+}
+
+.form-group.invalid input,
+.form-group.invalid select,
+.form-group.invalid textarea {
+    border-color: var(--color-error);
+}
+
+.error-msg {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    font-size: 0.75rem;
+    color: var(--color-error);
+    opacity: 0;
+    transition: var(--transition-fast);
+}
+
+.form-group.invalid .error-msg {
+    opacity: 1;
+}
+
+.form-status {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+    text-align: center;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background-color: rgba(16, 185, 129, 0.15);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+}
+
+.form-status.error {
+    display: block;
+    background-color: rgba(239, 68, 68, 0.15);
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+}
+
+/* 15. Footer */
+.main-footer {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-top {
+    padding: 80px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.brand-col .logo {
+    margin-bottom: 24px;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    max-width: 320px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-navy-light);
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-links a:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+.footer-col-title {
+    color: var(--color-white);
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-col-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-gold);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-gold);
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 0;
+}
+
+.footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-legal-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal-links a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.footer-legal-links a:hover {
+    color: var(--color-gold);
+}
+
+/* 16. Scroll Animations Class Definitions */
+.scroll-reveal {
+    opacity: 0;
+    transition: var(--transition-slow);
+}
+
+.scroll-reveal.fade-up {
+    transform: translateY(40px);
+}
+
+.scroll-reveal.fade-left {
+    transform: translateX(40px);
+}
+
+.scroll-reveal.fade-right {
+    transform: translateX(-40px);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* 17. Responsive Media Queries */
+
+/* Tablet & Landscape Devices */
+@media (max-width: 1024px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .btn-nav {
+        display: none; /* Hide header consultation button on tablet/mobile to prevent layout crowding */
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .brand-col {
+        grid-column: span 2;
+    }
+
+    .footer-col:not(.brand-col) {
+        padding-left: 32px; /* Indent footer columns to prevent alignment text clipping on narrower screens */
+    }
+}
+
+/* Mobile & Small Devices */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    /* Header & Navigation Adjustment */
+    .main-header {
+        padding: 14px 0;
+    }
+    
+    .main-header.scrolled {
+        padding: 12px 0;
+    }
+
+    .logo-title {
+        font-size: 1.15rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.55rem;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .btn-nav {
+        display: none; /* Hide standard header button to save horizontal space */
+    }
+    
+    /* Hero Section Mobile Polish */
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 130px 0 70px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    /* Stats grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .experience-badge {
+        padding: 12px 20px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .badge-number {
+        font-size: 1.8rem;
+    }
+
+    .badge-text {
+        font-size: 0.65rem;
+    }
+    
+    /* Navigation Menu Toggle Drawer */
+    .mobile-nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--color-navy);
+        z-index: 100;
+        transition: var(--transition-normal);
+        padding: 90px 30px 40px 30px;
+        box-shadow: var(--shadow-hard);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .nav-menu.open {
+        right: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        display: block;
+        padding: 8px 0;
+    }
+    
+    /* Hamburger Icon Open States */
+    .mobile-nav-toggle.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(2px, -2px);
+    }
+    
+    .mobile-nav-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-nav-toggle.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, 1px);
+    }
+
+    /* Process Timeline Responsive */
+    .timeline-line {
+        display: none;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .timeline-item {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        gap: 16px;
+    }
+    
+    .timeline-marker {
+        margin: 0;
+        flex-shrink: 0;
+        width: 46px;
+        height: 46px;
+        font-size: 1.25rem;
+    }
+    
+    .timeline-text {
+        padding: 0;
+    }
+    
+    /* Contact Form Layout */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .form-wrapper {
+        padding: 24px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .brand-col {
+        grid-column: span 1;
+    }
+
+    .footer-col:not(.brand-col) {
+        padding-left: 32px; /* Indent lists on mobile to align with brand logo text and establish clean hierarchy */
+    }
+    
+    .footer-bottom-container {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   18. WHATSAPP FLOATING WIDGET
+   ========================================================================== */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+    font-family: var(--font-body);
+}
+
+.whatsapp-btn {
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3), var(--shadow-medium);
+    transition: var(--transition-normal);
+    position: relative;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    background-color: #20ba5a;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4), var(--shadow-medium);
+}
+
+.whatsapp-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-gold);
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0% { transform: scale(0.9); opacity: 0.9; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.9; }
+}
+
+.whatsapp-popup {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 320px;
+    background-color: var(--color-navy);
+    border: 1px solid var(--color-gold);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-hard);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px) scale(0.95);
+    transition: var(--transition-normal);
+    overflow: hidden;
+}
+
+.whatsapp-popup.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.whatsapp-header {
+    background: linear-gradient(135deg, var(--color-navy-light) 0%, var(--color-navy) 100%);
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.whatsapp-header h4 {
+    color: var(--color-white);
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.whatsapp-header p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+}
+
+.whatsapp-list {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(11, 31, 58, 0.98);
+}
+
+.whatsapp-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--color-navy-light);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.whatsapp-contact-item:hover {
+    background-color: rgba(200, 167, 91, 0.08);
+    border-color: var(--color-gold);
+    transform: translateX(3px);
+}
+
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-info-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contact-name {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.contact-role {
+    color: var(--color-gold);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+.contact-spec {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.7rem;
+    margin-top: 1px;
+}
+
+.chat-now-icon {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    transition: var(--transition-fast);
+}
+
+.whatsapp-contact-item:hover .chat-now-icon {
+    color: var(--color-white);
+    transform: translateX(2px);
+}
+
+/* Adjustments for smaller screen layouts */
+@media (max-width: 768px) {
+    .whatsapp-widget {
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .whatsapp-popup {
+        width: 290px;
+        bottom: 66px;
+    }
+}
+
+
+</style>
+
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lextotum.com/">
+    <meta name="keywords"
+        content="Lex Totum, legal consultancy, corporate law, civil litigation, family law, criminal law, property law, labour law, tax law, intellectual property, Kozhikode lawyers">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lextotum.com/">
+    <meta property="og:title" content="Lex Totum | Premium Corporate Legal Consultancy">
+    <meta property="og:description"
+        content="Trusted legal experts providing premium consultancy for businesses and individuals. Corporate law, litigation, intellectual property, and more.">
+    <meta property="og:image" content="https://lextotum.com/hero_background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lextotum.com/">
+    <meta property="twitter:title" content="Lex Totum | Premium Corporate Legal Consultancy">
+    <meta property="twitter:description"
+        content="Trusted legal experts providing premium consultancy for businesses and individuals. Corporate law, litigation, intellectual property, and more.">
+    <meta property="twitter:image" content="https://lextotum.com/hero_background.png">
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Lex Totum",
+      "image": "https://lextotum.com/hero_background.png",
+      "description": "Trusted legal experts providing premium consultancy for businesses and individuals. Corporate law, litigation, intellectual property, and more.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ground Floor, Court View Arcade, Opp. District Court Complex, Court Road",
+        "addressLocality": "Kozhikode",
+        "addressRegion": "Kerala",
+        "postalCode": "673001",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919496470069",
+      "email": "contact@lextotum.com",
+      "url": "https://lextotum.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:30",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "14:00"
+        }
+      ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Adv. Zameel K. T",
+          "jobTitle": "Legal Consultant"
+        },
+        {
+          "@type": "Person",
+          "name": "Adv. T Abdulla",
+          "jobTitle": "Legal Consultant"
+        }
+      ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget" id="whatsappWidget">
+        <button class="whatsapp-btn" id="whatsappBtn" aria-label="Chat on WhatsApp" aria-haspopup="true"
+            aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" width="22" height="22">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+            <span class="whatsapp-badge"></span>
+        </button>
+        <div class="whatsapp-popup" id="whatsappPopup">
+            <div class="whatsapp-header">
+                <h4>Start a Conversation</h4>
+                <p>Select a legal consultant to chat on WhatsApp</p>
+            </div>
+            <div class="whatsapp-list">
+                <a href="https://wa.me/918606875979?text=Hello%20Adv.%20Zameel%20K.%20T,%20I%20would%20like%20to%20consult%20regarding..."
+                    target="_blank" class="whatsapp-contact-item">
+                    <div class="contact-avatar">ZK</div>
+                    <div class="contact-info-text">
+                        <span class="contact-name">Adv. Zameel K. T</span>
+                        <span class="contact-role">Legal Consultant</span>
+                        <span class="contact-spec">B.B.A, L.L.B</span>
+                    </div>
+                    <span class="chat-now-icon">→</span>
+                </a>
+                <a href="https://wa.me/919496470069?text=Hello%20Adv.%20T%20Abdulla,%20I%20would%20like%20to%20consult%20regarding..."
+                    target="_blank" class="whatsapp-contact-item">
+                    <div class="contact-avatar">TA</div>
+                    <div class="contact-info-text">
+                        <span class="contact-name">Adv. T Abdulla</span>
+                        <span class="contact-role">Legal Consultant</span>
+                        <span class="contact-spec">BA, BEd., LLB</span>
+                    </div>
+                    <span class="chat-now-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logoLink">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </span>
+                <div class="logo-text">
+                    <span class="logo-title">LEX TOTUM</span>
+                    <span class="logo-subtitle">LEGAL CONSULTANCY</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#practice-areas" class="nav-link">Practice Areas</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-gold btn-nav">Book Consultation</a>
+                <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-controls="navMenu"
+                    aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg">
+                <img src="hero_background.png" alt="Lex Totum Office Background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal fade-up">
+                    <span class="hero-tag">PREMIUM LEGAL SERVICES</span>
+                    <h1 class="hero-title">Trusted Legal Experts for Businesses & Individuals</h1>
+                    <p class="hero-subtitle">Navigating complex legal landscapes with precision, integrity, and bespoke
+                        strategies tailored for your success.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-gold">Book Consultation</a>
+                        <a href="#about" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="about-image scroll-reveal fade-right">
+                        <div class="image-wrapper">
+                            <img src="about_lawyer.png" alt="Lex Totum Corporate Team Meeting">
+                            <div class="experience-badge">
+                                <span class="badge-number">15+</span>
+                                <span class="badge-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content scroll-reveal fade-left">
+                        <span class="section-tag">ABOUT OUR FIRM</span>
+                        <h2 class="section-title">We Champion Your Legal Rights With Distinction</h2>
+                        <p class="about-desc-lead">Lex Totum is a premier, full-service legal consultancy firm dedicated
+                            to delivering sophisticated advocacy and strategic counsel to corporate entities and private
+                            clients worldwide.</p>
+                        <p class="about-desc-text">Established with the core principles of absolute confidentiality,
+                            unparalleled expertise, and client-centric solutions, our legal professionals bring deep
+                            sector insight and rigorous analysis to every case.</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-num" data-target="15">15+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-target="500">500+</span>
+                                <span class="stat-label">Clients Served</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-target="1200">1200+</span>
+                                <span class="stat-label">Successful Cases</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-target="100">100%</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">OUR VALUES</span>
+                    <h2 class="section-title">Why Discerning Clients Trust Lex Totum</h2>
+                    <p class="section-subtitle">We merge traditional legal rigor with modern, innovative approaches to
+                        protect your assets, businesses, and personal interests.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Feature 1 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Expert Lawyers</h3>
+                        <p class="feature-text">Our elite team consists of recognized specialists across multiple legal
+                            sectors, assuring expert handling of your matters.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 9.9-1" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Confidential Advice</h3>
+                        <p class="feature-text">We hold client privilege and professional discretion to the highest
+                            absolute standards, protecting your sensitive information.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23" />
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Transparent Pricing</h3>
+                        <p class="feature-text">Clear, upfront, and predictable pricing models with no hidden fees,
+                            designed to optimize legal budget efficiency.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Fast Documentation</h3>
+                        <p class="feature-text">Streamlined workflows and digital integrations ensure prompt drafting,
+                            review, and filing of legal instruments.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Corporate Expertise</h3>
+                        <p class="feature-text">Deep understanding of corporate compliance, commercial litigation,
+                            governance, and transnational transactions.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="feature-card scroll-reveal fade-up">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+                                <line x1="16" y1="8" x2="2" y2="22" />
+                                <line x1="17.5" y1="15" x2="9" y2="15" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Personalized Solutions</h3>
+                        <p class="feature-text">Every client receives dedicated account handlers, building custom legal
+                            strategies suited to specific outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Areas Section -->
+        <section id="practice-areas" class="practice-section section-padding">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">OUR SPECIALTIES</span>
+                    <h2 class="section-title">Comprehensive Legal Practice Areas</h2>
+                    <p class="section-subtitle">We offer customized legal counsel across diverse legal practice sectors
+                        to safeguard your personal and enterprise endeavors.</p>
+                </div>
+
+                <div class="practice-grid grid grid-4">
+                    <!-- Area 1 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_corporate.png" alt="Corporate Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Corporate Law</h3>
+                            <p class="practice-card-text">Mergers, acquisitions, commercial governance, corporate
+                                compliance, and joint venture advisory.</p>
+                        </div>
+                    </div>
+                    <!-- Area 2 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_litigation.png" alt="Civil Litigation">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m14 9-9 9M18 5l-3 3M19 10l-4-4" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Civil Litigation</h3>
+                            <p class="practice-card-text">Contractual disputes, civil liability, tort claims, and
+                                multi-jurisdictional litigation defense.</p>
+                        </div>
+                    </div>
+                    <!-- Area 3 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_family.png" alt="Family Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Family Law</h3>
+                            <p class="practice-card-text">Marital dissolution, custody agreements, probate management,
+                                and estate transition counseling.</p>
+                        </div>
+                    </div>
+                    <!-- Area 4 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_criminal.png" alt="Criminal Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Criminal Law</h3>
+                            <p class="practice-card-text">White-collar crime defense, state level charges, compliance
+                                investigations, and trial representation.</p>
+                        </div>
+                    </div>
+                    <!-- Area 5 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_property.png" alt="Property Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Property Law</h3>
+                            <p class="practice-card-text">Real estate acquisitions, lease structuring, land disputes,
+                                and zoning/development advisory.</p>
+                        </div>
+                    </div>
+                    <!-- Area 6 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_corporate.png" alt="Labour Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Labour Law</h3>
+                            <p class="practice-card-text">Employment contracts, workplace resolution policies,
+                                collective bargaining, and HR disputes.</p>
+                        </div>
+                    </div>
+                    <!-- Area 7 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_litigation.png" alt="Tax Law">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23" />
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Tax Law</h3>
+                            <p class="practice-card-text">Corporate taxation strategy, audit representation,
+                                international trade duties, and fiscal optimization.</p>
+                        </div>
+                    </div>
+                    <!-- Area 8 -->
+                    <div class="practice-card scroll-reveal fade-up">
+                        <div class="practice-card-bg">
+                            <img src="practice_property.png" alt="Intellectual Property">
+                        </div>
+                        <div class="practice-card-content">
+                            <div class="practice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 16v-4" />
+                                    <path d="M12 8h.01" />
+                                </svg>
+                            </div>
+                            <h3 class="practice-card-title">Intellectual Property</h3>
+                            <p class="practice-card-text">Patent drafting, trademark protection, copyright enforcement,
+                                and trade secret protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">WHAT WE DO</span>
+                    <h2 class="section-title">Professional Legal Services</h2>
+                    <p class="section-subtitle">Delivering precision-focused services, structured to resolve legal
+                        complex issues efficiently.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Service 1 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Legal Consultation</h3>
+                        <p class="service-text">In-depth case evaluations and direct strategy discussions with leading
+                            senior counsel partners.</p>
+                        <a href="#contact" class="service-link">Request Consultation →</a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Documentation</h3>
+                        <p class="service-text">Preparation, verification, and formal filing of legal petitions,
+                            affidavits, and response briefs.</p>
+                        <a href="#contact" class="service-link">Learn More →</a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Agreement Drafting</h3>
+                        <p class="service-text">Custom structuring of NDAs, employment terms, commercial leases, and
+                            service agreements.</p>
+                        <a href="#contact" class="service-link">Learn More →</a>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Business Registration</h3>
+                        <p class="service-text">End-to-end guidance in corporate registration, partnership setup, LLC
+                            formations, and corporate structures.</p>
+                        <a href="#contact" class="service-link">Learn More →</a>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Trademark Registration</h3>
+                        <p class="service-text">Filing protection frameworks for brand designs, brand names, phrases,
+                            logos, and copyrights.</p>
+                        <a href="#contact" class="service-link">Learn More →</a>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card scroll-reveal fade-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 7 14 3 7 7M21 7v10l-7 4-7-4V7M21 7l-7 4-7-4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Court Representation</h3>
+                        <p class="service-text">Skilled advocacy in trial court chambers, arbitration tribunals, and
+                            appellate forums globally.</p>
+                        <a href="#contact" class="service-link">Request Counsel →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section class="process-section section-padding">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">METHODOLOGY</span>
+                    <h2 class="section-title">Our Working Process</h2>
+                    <p class="section-subtitle">A client journey built on thorough preparation, logical execution, and
+                        absolute focus on success.</p>
+                </div>
+
+                <div class="timeline-wrapper scroll-reveal fade-up">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-grid">
+                        <!-- Step 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Consultation</h3>
+                                <p class="timeline-text">We listen to your specific situation and define core client
+                                    objectives during the initial discussion.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Analysis</h3>
+                                <p class="timeline-text">Our litigation specialists thoroughly review facts, evidence,
+                                    and corresponding legal precedents.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Legal Strategy</h3>
+                                <p class="timeline-text">We present customizable strategy paths, mapping potential
+                                    timelines, risks, and budget requirements.</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Resolution</h3>
+                                <p class="timeline-text">We execute the strategy vigorously in discussions,
+                                    arbitrations, or courtrooms to achieve resolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">Client Success Stories</h2>
+                    <p class="section-subtitle">Hear from the corporate managers and individual clients who have relied
+                        on our advocacy.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card scroll-reveal fade-up">
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.192 15.757c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L12.98 16.52c-.612-.24-.925-.563-.925-.963zm-6 0c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L6.98 16.52c-.612-.24-.925-.563-.925-.963zM14 8c-.694 0-1.378.118-2.052.355C11.583 6.942 12.39 5.86 14.37 5.11L13.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C14 11.23 13.9 8 14 8zm-8 0c-.694 0-1.378.118-2.052.355C3.583 6.942 4.39 5.86 6.37 5.11L5.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C6 11.23 5.9 8 6 8z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Lex Totum guided our organization through a high-stakes
+                            cross-border acquisition. Their legal expertise, dedication, and precision-level negotiation
+                            skills saved us millions."</p>
+                        <div class="client-profile">
+                            <div class="client-info">
+                                <h4 class="client-name">Marcus Vance</h4>
+                                <p class="client-role">CEO, Apex Solutions Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card scroll-reveal fade-up">
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.192 15.757c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L12.98 16.52c-.612-.24-.925-.563-.925-.963zm-6 0c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L6.98 16.52c-.612-.24-.925-.563-.925-.963zM14 8c-.694 0-1.378.118-2.052.355C11.583 6.942 12.39 5.86 14.37 5.11L13.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C14 11.23 13.9 8 14 8zm-8 0c-.694 0-1.378.118-2.052.355C3.583 6.942 4.39 5.86 6.37 5.11L5.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C6 11.23 5.9 8 6 8z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"The family law team at Lex Totum was incredibly supportive,
+                            compassionate, and professional during my estate transition process. Highly recommended."
+                        </p>
+                        <div class="client-profile">
+                            <div class="client-info">
+                                <h4 class="client-name">Eleanor Sterling</h4>
+                                <p class="client-role">Estate Beneficiary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card scroll-reveal fade-up">
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.192 15.757c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L12.98 16.52c-.612-.24-.925-.563-.925-.963zm-6 0c0-.9-.239-1.921-.717-3.064l1.17-1.12c1.077 1.07 1.884 2.302 2.42 3.696L6.98 16.52c-.612-.24-.925-.563-.925-.963zM14 8c-.694 0-1.378.118-2.052.355C11.583 6.942 12.39 5.86 14.37 5.11L13.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C14 11.23 13.9 8 14 8zm-8 0c-.694 0-1.378.118-2.052.355C3.583 6.942 4.39 5.86 6.37 5.11L5.43 3.39c-3.13 1.25-5.26 3.49-6.4 6.72-.37 1.05-.56 2.19-.56 3.44 0 2.22 1.48 3.95 3.96 3.95 2.17 0 3.57-1.48 3.57-3.69C6 11.23 5.9 8 6 8z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"As a tech startup, protecting intellectual property was paramount.
+                            Lex Totum made the trademark and patent application process incredibly straightforward."</p>
+                        <div class="client-profile">
+                            <div class="client-info">
+                                <h4 class="client-name">David Chen</h4>
+                                <p class="client-role">Founder, Neurowork Systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team" class="team-section section-padding">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">EXPERTISE</span>
+                    <h2 class="section-title">Our Legal Team</h2>
+                    <p class="section-subtitle">Dedicated professionals combining strategic vision with profound legal
+                        understanding.</p>
+                </div>
+
+                <!-- Category 1: Leading Counsel -->
+                <h3 class="team-category-title scroll-reveal fade-up">Leading Counsel</h3>
+                <!-- START_LEADING_COUNSEL -->
+                <div class="grid grid-2  scroll-reveal fade-up" style="margin-bottom: 60px;">
+                    <div class="team-card ">
+                        <div class="team-image">
+                            <img src="images/team/leading/01_Adv._Zameel_K._T-B.B.A,_L.LB.png" alt="Adv. Zameel K. T" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Zameel K. T</h3>
+                            <p class="team-designation">Legal Consultant</p>
+                            <p class="team-spec">B.B.A, L.LB</p>
+                        </div>
+                    </div>
+                    <div class="team-card ">
+                        <div class="team-image">
+                            <img src="images/team/leading/Adv._T._Abdulla.jpeg" alt="Adv. T. Abdulla" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. T. Abdulla</h3>
+                            <p class="team-designation">Legal Consultant</p>
+                            <p class="team-spec">BA, BEd., LLB</p>
+                        </div>
+                    </div>
+                </div>
+<!-- END_LEADING_COUNSEL -->
+
+                <!-- Category 2: Associate Advocates -->
+                <h3 class="team-category-title scroll-reveal fade-up">Junior Advocates</h3>
+                <!-- START_ASSOCIATE_ADVOCATES -->
+                <div class="grid grid-3 grid-center scroll-reveal fade-up" style="margin-bottom: 60px;">
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/01_Adv._Irfan-LLB.png" alt="Adv. Irfan" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Irfan</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/02_Adv._Aleena_Marry-LLB.png" alt="Adv. Aleena Marry" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Aleena Marry</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/03_Adv._Jidendran_K-LLB.png" alt="Adv. Jidendran K" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Jidendran K</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/05_Adv._Shidhina_A._M.-LLB.jpeg" alt="Adv. Shidhina A. M." class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Shidhina A. M.</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/06_Adv._Sherin_Gafoor-LLB.png" alt="Adv. Sherin Gafoor" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Sherin Gafoor</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/07_Adv._Snehal_Tom-LLB.png" alt="Adv. Snehal Tom" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Snehal Tom</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-small">
+                        <div class="team-image">
+                            <img src="images/team/associates/08_Adv._Nesamudheen.png" alt="Adv. Nesamudheen" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Adv. Nesamudheen</h3>
+                        </div>
+                    </div>
+                </div>
+<!-- END_ASSOCIATE_ADVOCATES -->
+
+                <!-- Category 3: Legal Interns -->
+                <h3 class="team-category-title scroll-reveal fade-up">Para Legal and Interns</h3>
+                <!-- START_LEGAL_INTERNS -->
+                <div class="grid grid-6 grid-center scroll-reveal fade-up" style="">
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/01_Shahdiya_Farhath-LLB.png" alt="Shahdiya Farhath" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Shahdiya Farhath</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/02_Aswathi_Ashokan_M.V.-LLB.png" alt="Aswathi Ashokan M.V." class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Aswathi Ashokan M.V.</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/02_Fiza_P._A.-LLB.jpeg" alt="Fiza P. A." class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Fiza P. A.</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/03_Ayshah-LLB.png" alt="Ayshah" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Ayshah</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/09_Suhaira_Subair-LLB.png" alt="Suhaira Subair" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Suhaira Subair</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/10_Benna_Najeeb.png" alt="Benna Najeeb" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Benna Najeeb</h3>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-mini">
+                        <div class="team-image">
+                            <img src="images/team/interns/11_Vipinlal_V._P.png" alt="Vipinlal V. P" class="team-photo">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Vipinlal V. P</h3>
+                        </div>
+                    </div>
+                </div>
+<!-- END_LEGAL_INTERNS -->
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal fade-up">
+                    <span class="section-tag">LEGAL INSIGHTS</span>
+                    <h2 class="section-title">The Law Journal</h2>
+                    <p class="section-subtitle">Strategic updates, regulatory analysis, and critical legal news from our
+                        active practice areas.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card scroll-reveal fade-up">
+                        <div class="blog-card-header">
+                            <span class="blog-date">July 5, 2026</span>
+                            <span class="blog-category">Corporate</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-card-title"><a href="#blog">Navigating the 2026 Cross-Border Mergers
+                                    Regulations</a></h3>
+                            <p class="blog-card-excerpt">An overview of key regulatory updates affecting multinational
+                                acquisitions and joint venture compliance models this financial year.</p>
+                        </div>
+                        <div class="blog-card-footer">
+                            <a href="#blog" class="blog-link">Read Analysis →</a>
+                        </div>
+                    </article>
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card scroll-reveal fade-up">
+                        <div class="blog-card-header">
+                            <span class="blog-date">June 28, 2026</span>
+                            <span class="blog-category">IP Protection</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-card-title"><a href="#blog">AI Systems and Patent Inventorship Standards</a>
+                            </h3>
+                            <p class="blog-card-excerpt">How global courts are addressing copyright and patent
+                                authorship challenges for innovations generated by artificial intelligence.</p>
+                        </div>
+                        <div class="blog-card-footer">
+                            <a href="#blog" class="blog-link">Read Analysis →</a>
+                        </div>
+                    </article>
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card scroll-reveal fade-up">
+                        <div class="blog-card-header">
+                            <span class="blog-date">June 15, 2026</span>
+                            <span class="blog-category">Labour Law</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-card-title"><a href="#blog">Structuring Remote Workforce Agreements
+                                    Legally</a></h3>
+                            <p class="blog-card-excerpt">Best practices for HR compliance, taxation rules, and
+                                intellectual property safety with distributed multi-state workforces.</p>
+                        </div>
+                        <div class="blog-card-footer">
+                            <a href="#blog" class="blog-link">Read Analysis →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="contact-info-col scroll-reveal fade-right">
+                        <span class="section-tag">GET IN TOUCH</span>
+                        <h2 class="section-title">Schedule a Confidential Consultation</h2>
+                        <p class="contact-intro">Reach out to start a discussion. Our partner attorneys will evaluate
+                            your case requirements and respond with complete confidentiality.</p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Office Chambers</h4>
+                                    <p>Ground Floor, Court View Arcade,<br>Opp. District Court Complex, Court Road,
+                                        Kozhikode - 673001</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Direct Contact</h4>
+                                    <p>Adv. Zameel K. T: +91 8606 875 979<br>Adv. T Abdulla: +91 9496 470 069<br>Email:
+                                        contact@lextotum.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Working Hours</h4>
+                                    <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-col scroll-reveal fade-left">
+                        <div class="form-wrapper">
+                            <h3>Case Evaluation Intake</h3>
+                            <p>Fields marked with * are required under privacy guidelines.</p>
+
+                            <form id="contactForm" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="formName">Full Name *</label>
+                                        <input type="text" id="formName" name="name" required placeholder="John Doe">
+                                        <span class="error-msg" id="nameError">Name is required</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formEmail">Email Address *</label>
+                                        <input type="email" id="formEmail" name="email" required
+                                            placeholder="john@example.com">
+                                        <span class="error-msg" id="emailError">Valid email is required</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="formPhone">Phone Number</label>
+                                        <input type="tel" id="formPhone" name="phone" placeholder="+1 (555) 000-0000">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formSubject">Subject Area *</label>
+                                        <select id="formSubject" name="subject" required>
+                                            <option value="">Select subject...</option>
+                                            <option value="Corporate Law">Corporate Law</option>
+                                            <option value="Civil Litigation">Civil Litigation</option>
+                                            <option value="Intellectual Property">Intellectual Property</option>
+                                            <option value="Other Legal Services">Other Legal Services</option>
+                                        </select>
+                                        <span class="error-msg" id="subjectError">Please select a subject</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formMessage">Brief Case Summary *</label>
+                                    <textarea id="formMessage" name="message" rows="5" required
+                                        placeholder="Please outline the legal issue..."></textarea>
+                                    <span class="error-msg" id="messageError">Message content is required</span>
+                                </div>
+                                <button type="submit" class="btn btn-gold btn-block">Submit Secure Evaluation
+                                    Request</button>
+                                <div id="formStatus" class="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-top">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </span>
+                        <div class="logo-text">
+                            <span class="logo-title">LEX TOTUM</span>
+                            <span class="logo-subtitle">LEGAL CONSULTANCY</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Offering premier commercial advocacy and advisory systems with complete
+                        privacy, integrity, and diligence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home Base</a></li>
+                        <li><a href="#about">About Our Firm</a></li>
+                        <li><a href="#why-choose-us">Our Core Values</a></li>
+                        <li><a href="#team">Counsel Members</a></li>
+                        <li><a href="#blog">The Law Journal</a></li>
+                        <li><a href="#contact">Contact Chamber</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Practice Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="#practice-areas">Corporate Law</a></li>
+                        <li><a href="#practice-areas">Civil Litigation</a></li>
+                        <li><a href="#practice-areas">Intellectual Property</a></li>
+                        <li><a href="#practice-areas">Property Regulations</a></li>
+                        <li><a href="#practice-areas">Labour Compliance</a></li>
+                        <li><a href="#practice-areas">Tax Strategy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Lex Totum. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Engagement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        /**
+         * LEX TOTUM - CLIENT-SIDE INTERACTIVE SCRIPTS
+         */
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. STICKY NAV & BACK-TO-TOP BUTTON SCROLL HANDLER
+            const header = document.querySelector('.main-header');
+            const backToTopBtn = document.getElementById('backToTop');
+
+            const handleScrollEffects = () => {
+                const scrollY = window.scrollY;
+
+                // Sticky Header Toggle
+                if (scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Back To Top Visibility Toggle
+                if (scrollY > 600) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            };
+
+            window.addEventListener('scroll', handleScrollEffects);
+
+            // Smooth Scroll to Top on Button Click
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // 2. MOBILE NAVIGATION DRAWER
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const toggleMobileMenu = () => {
+                const isOpen = navMenu.classList.toggle('open');
+                mobileToggle.classList.toggle('open');
+                mobileToggle.setAttribute('aria-expanded', isOpen);
+            };
+
+            const closeMobileMenu = () => {
+                navMenu.classList.remove('open');
+                mobileToggle.classList.remove('open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            };
+
+            mobileToggle.addEventListener('click', toggleMobileMenu);
+
+            // Close menu when clicking navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // 3. SCROLL REVEAL ANIMATIONS (Intersection Observer)
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+
+            const revealCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Once animated, no need to watch again
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const revealObserver = new IntersectionObserver(revealCallback, {
+                root: null, // viewport
+                threshold: 0.15, // trigger when 15% visible
+                rootMargin: '0px 0px -50px 0px' // offset bottom slightly
+            });
+
+            revealElements.forEach(elem => {
+                revealObserver.observe(elem);
+            });
+
+            // 4. ACTIVE NAVIGATION LINK ON WINDOW SCROLL
+            const sections = document.querySelectorAll('section[id]');
+
+            const activeLinkObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const sectionId = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.3, // Trigger when 30% of section is visible
+                rootMargin: '-20% 0px -50% 0px' // Adjust scroll focus box
+            });
+
+            sections.forEach(section => {
+                activeLinkObserver.observe(section);
+            });
+
+            // 5. CONTACT FORM VALIDATION & HANDLING
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+
+            const formFields = {
+                name: {
+                    element: document.getElementById('formName'),
+                    error: document.getElementById('nameError'),
+                    validate: (val) => val.trim().length > 1
+                },
+                email: {
+                    element: document.getElementById('formEmail'),
+                    error: document.getElementById('emailError'),
+                    validate: (val) => {
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        return emailRegex.test(val.trim());
+                    }
+                },
+                subject: {
+                    element: document.getElementById('formSubject'),
+                    error: document.getElementById('subjectError'),
+                    validate: (val) => val.trim() !== ''
+                },
+                message: {
+                    element: document.getElementById('formMessage'),
+                    error: document.getElementById('messageError'),
+                    validate: (val) => val.trim().length > 9
+                }
+            };
+
+            const validateField = (fieldKey) => {
+                const field = formFields[fieldKey];
+                const val = field.element.value;
+                const isValid = field.validate(val);
+                const group = field.element.closest('.form-group');
+
+                if (isValid) {
+                    group.classList.remove('invalid');
+                } else {
+                    group.classList.add('invalid');
+                }
+
+                return isValid;
+            };
+
+            // Add real-time validation feedback on input change
+            Object.keys(formFields).forEach(key => {
+                const input = formFields[key].element;
+                input.addEventListener('blur', () => validateField(key));
+                input.addEventListener('input', () => {
+                    const group = input.closest('.form-group');
+                    if (group.classList.contains('invalid')) {
+                        validateField(key);
+                    }
+                });
+            });
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Validate all fields
+                let isFormValid = true;
+                Object.keys(formFields).forEach(key => {
+                    const isFieldValid = validateField(key);
+                    if (!isFieldValid) {
+                        isFormValid = false;
+                    }
+                });
+
+                if (!isFormValid) {
+                    formStatus.textContent = 'Please correct the invalid fields above.';
+                    formStatus.className = 'form-status error';
+                    return;
+                }
+
+                // Form is valid - Simulate premium submission animation
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.textContent;
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Securing Session Connection...';
+
+                formStatus.style.display = 'none';
+
+                setTimeout(() => {
+                    submitBtn.textContent = 'Sending Encrypted Data...';
+
+                    setTimeout(() => {
+                        // Success feedback
+                        formStatus.textContent = 'Case evaluation request received. A partner attorney will contact you securely within 12 hours.';
+                        formStatus.className = 'form-status success';
+
+                        // Clear the form
+                        contactForm.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalBtnText;
+
+                        // Remove visual status block after timeout
+                        setTimeout(() => {
+                            formStatus.style.display = 'none';
+                        }, 6000);
+                    }, 1200);
+                }, 1000);
+            });
+
+            // 6. WHATSAPP WIDGET TOGGLE
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            const whatsappPopup = document.getElementById('whatsappPopup');
+
+            whatsappBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = whatsappPopup.classList.toggle('open');
+                whatsappBtn.setAttribute('aria-expanded', isOpen);
+            });
+
+            // Close popup when clicking anywhere outside of it
+            document.addEventListener('click', (e) => {
+                if (!whatsappPopup.contains(e.target) && !whatsappBtn.contains(e.target)) {
+                    whatsappPopup.classList.remove('open');
+                    whatsappBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
