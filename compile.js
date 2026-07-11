@@ -242,9 +242,14 @@ function getTeamHtml(dirName, cardClass, defaultHtml, category) {
         
         let name = nameWithoutExt;
         let degree = '';
+        let extra = '';
         
-        if (nameWithoutExt.includes('-')) {
-            const parts = nameWithoutExt.split('-');
+        const parts = nameWithoutExt.split('-');
+        if (parts.length > 2) {
+            name = parts[0];
+            degree = parts[1].replace(/_/g, ' ');
+            extra = parts.slice(2).join('-').replace(/_/g, ' ');
+        } else if (parts.length === 2) {
             name = parts[0];
             degree = parts[1].replace(/_/g, ' ');
         } else {
@@ -270,6 +275,9 @@ function getTeamHtml(dirName, cardClass, defaultHtml, category) {
                         </div>
                         <div class="team-info">
                             <h3 class="team-name">${name}</h3>\n`;
+        if (extra) {
+            html += `                            <p class="team-extra-info">${extra}</p>\n`;
+        }
         if (category === 'leading') {
             html += `                            <p class="team-designation">${designation}</p>
                             <p class="team-spec">${degree}</p>\n`;

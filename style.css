@@ -901,6 +901,13 @@ p {
     font-size: 0.85rem;
 }
 
+.team-extra-info {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    margin-top: 4px;
+}
+
 .team-category-title {
     font-size: 1.6rem;
     color: var(--color-navy);
