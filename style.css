@@ -1638,6 +1638,41 @@ p {
     box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4), var(--shadow-medium);
 }
 
+/* Direct Whatsapp Button on Leading Counsel Cards */
+.team-card {
+    position: relative;
+}
+
+.card-whatsapp-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background-color: #25D366;
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: var(--transition-normal);
+    z-index: 5;
+}
+
+.card-whatsapp-link:hover {
+    transform: scale(1.1) translateY(-2px);
+    background-color: #20ba5a;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+    color: var(--color-white);
+}
+
+.card-whatsapp-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
 .whatsapp-badge {
     position: absolute;
     top: 2px;
